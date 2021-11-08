@@ -19,3 +19,6 @@ class UpvoteForm(FlaskForm):
 class Downvote(FlaskForm):
   submit = SubmitField()
 
+class UpdateProfile(FlaskForm):
+  bio = TextAreaField('Tell the world who you are...', validators = [Required()])
+  submit = SubmitField('Submit')
