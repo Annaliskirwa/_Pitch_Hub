@@ -9,3 +9,7 @@ class PitchForm(FlaskForm):
   category = RadioField('Label', choices = [('promotionpitch', 'Promotion Pitch'), ('interviewpitch', 'Interview Pitch'), ('pickuplines', 'Pick-Up Lines'), ('productpitch', 'Product Pitch')], validators = [Required()])
   submit = SubmitField('Submit')
 
+class CommentForm(FlaskForm):
+  description = TextAreaField('Comment here', validators = [Required()])
+  submit = SubmitField('Submit')
+
