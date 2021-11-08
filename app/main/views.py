@@ -99,3 +99,15 @@ def downvote(pitch_id):
   new_downvote = Downvote(pitch_id=pitch_id, user = current_user)
   new_downvote.save_downvotes()
   return redirect(url_for('main.index'))
+
+@main.route('/user/<uname>')
+def profile(uname):
+  """
+  View profile page function that returns a users profile
+  """
+  user = User.query.filter_by(username = uname).first()
+
+  if user is None:
+    abort(404)
+
+  return render_template('profile/profile.html', user = user)
