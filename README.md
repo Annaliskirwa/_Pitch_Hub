@@ -28,7 +28,7 @@ The pitches are organized by category. You can have different categories like pi
  ## Setup/Installation Requirements  
  ### To interact with the Pitch Hub web application:   
 * Have the latest version of browser installed  
-* Click on this <a href = "">link</a> to use your one minute wisely  
+* Click on this <a href = "https://annpitches.herokuapp.com/">link</a> to use your one minute wisely  
   
  ### To contribute to the web application project:  
 Make sure you have the following installed:  
