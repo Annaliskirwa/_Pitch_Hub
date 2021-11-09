@@ -41,4 +41,34 @@ virtualenv
 * Create an account on Github
 * Fork the repository from Github with this <a href = "https://github.com/Annaliskirwa/_Pitch_Hub" >link </a>
 * Clone the repository
-* Open the project cloned project 
+* Open the project cloned project   
+* Install virtual environment using `$ python3.6 -m venv --without-pip virtual`
+* Activate virtual environment using `$ source virtual/bin/activate`
+* Download pip in our environment using `$ curl https://bootstrap.pypa.io/get-pip.py | python`
+* Install all the dependencies from the requirements.txt file by running `python3.6 pip install -r requirements.txt`
+* Create a `start.sh` file in the root of the folder and add the following code:
+
+        export MAIL_USERNAME=<your-email-address>
+        export MAIL_PASSWORD=<your-email-password>
+        export SECRET_KEY=<your-secret-key>
+
+* Edit the configuration instance in `manage.py` by commenting on `production` instance and uncommenting `development` instance
+* To run the application, in your terminal:
+
+        $ chmod a+x start.sh
+        $ ./start.sh  
+   
+   
+## Known Bugs
+There are no known bugs so far
+## Technologies Used  
+* Python v3.6  
+* HTML
+* Bootstrap
+* Flask  
+* NewsAPI  
+## Support and contact details
+In case of any problem while interacting with the web application, reach out to me at annalis.kirwa@student.moringaschool.com
+### License.
+MIT Copyright (c) 2021 **[MITlicense](LICENSE)**
+
