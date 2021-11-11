@@ -9,7 +9,7 @@
 <div class="container">
     <div class="row" style="margin-top: 5%">
         <div class="col-md-3"></div>
-        <div class="col-md-6">
+        <div class="col-md-6" style="color: crimson;">
             {% for message in get_flashed_messages() %}
                 <div class="alert alert-danger">
                     <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -19,9 +19,9 @@
 
             <!-- Login Form -->
             {{ wtf.quick_form(login_form) }}
-            <p style="margin-top: 5%">
+            <p style="margin-top: 5%; color: azure;">
                 You don't have an account?
-                <a href="{{url_for('auth.register')}}">Sign Up Here</a>
+                <a style="color: crimson;" href="{{url_for('auth.register')}}">Sign Up Here</a>
             </p>
         </div>
         <div class="col-md-3"></div>
