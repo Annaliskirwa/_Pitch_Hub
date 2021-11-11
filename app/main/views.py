@@ -12,7 +12,7 @@ def index():
   View root page function that returns the index page and it's data
   '''
   title = 'Pitch Hub'
-  descr = 'Pitch Hub application allows users to submit their one minute pitches and other users will vote on them and leave comments to give their feedback. The pitches are organized by category.'
+  descr = 'Pitch Hub is a web application that allows users to use their one minute wisely to say something meaningful. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them.'
   pitch = Pitch.query.filter_by().first()
   pickuplines = Pitch.query.filter_by(category='pickuplines')
   interviewpitch = Pitch.query.filter_by(category='interviewpitch')
