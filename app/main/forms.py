@@ -24,3 +24,6 @@ class Downvote(FlaskForm):
 class UpdateProfile(FlaskForm):
   bio = TextAreaField('Tell the world who you are...', validators = [Required()])
   submit = SubmitField('Submit')
+
+style={'class': 'UpdateProfile', 'style':'color:azure; other_css_style;'}
+
